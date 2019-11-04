@@ -210,7 +210,7 @@ class globus (
     $_oauth_setup_command = undef
   }
 
-  $_setup_commands  = delete_undef_values([$_io_setup_command, $_id_setup_command, $_oauth_setup_command])
+  $_setup_commands  = delete_undef_values([$_id_setup_command, $_io_setup_command, $_oauth_setup_command])
   if String($version) == '5' {
     $_setup_command = 'globus-connect-server-setup'
   } else {
